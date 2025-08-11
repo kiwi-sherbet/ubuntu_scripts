@@ -21,13 +21,13 @@ git clone https://github.com/pyenv/pyenv-virtualenv.git $PYENV_VENV
 sudo sh ./third_party/linux-brprinter-installer-2.2.3-1
 
 mkdir ./tmp
-# wget https://developer.download.nvidia.com/compute/cuda/11.1.0/local_installers/cuda_11.1.0_455.23.05_linux.run -P ./tmp
-# sudo sh ./tmp/cuda_11.1.0_455.23.05_linux.run
+# wget wget https://developer.download.nvidia.com/compute/cuda/12.8.0/local_installers/cuda_12.8.0_570.86.10_linux.run -P ./tmp
+# sudo sh ./tmp/cuda_12.8.0_570.86.10_linux.run
 
-#wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/8.2.1.32/11.3_06072021/cudnn-11.3-linux-x64-v8.2.1.32.tgz -P ./tmp
-# tar -xzvf ./tmp/cudnn-11.3-linux-x64-v8.2.1.32.tgz -C ./tmp
-# sudo cp ./tmp/cuda/include/cudnn*.h /usr/local/cuda/include
-# sudo cp -P ./tmp/cuda/lib64/libcudnn* /usr/local/cuda/lib64 
+# wget https://developer.nvidia.com/downloads/compute/cudnn/secure/8.9.7/local_installers/12.x/cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz -P ./tmp
+# tar -xvf ./tmp/cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz -C ./tmp
+# sudo cp ./tmp/cudnn-linux-x86_64-8.9.7.29_cuda12-archive/include/cudnn*.h /usr/local/cuda/include
+# sudo cp -P ./tmp/cudnn-linux-x86_64-8.9.7.29_cuda12-archive/lib/libcudnn* /usr/local/cuda/lib64 
 # sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 
 echo "$(cat ./config/bash_config.txt)" >> ~/.bashrc
